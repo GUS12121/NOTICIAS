@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Novedades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .novedades-section {
+            background: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .novedades-section h2 {
+            margin-bottom: 20px;
+        }
+        .novedades-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .novedad {
+            background: white;
+            color: #333;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .novedad img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .novedad-content {
+            padding: 15px;
+        }
+        .novedad-content h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .novedad-content p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #666;
+        }
+        .novedad-content a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+        .novedad-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<section class="novedades-section">
+    <h2>Últimas Novedades</h2>
+    <div class="novedades-container">
+        <!-- Primera novedad -->
+        <div class="novedad">
+            <img src="https://via.placeholder.com/300x200" alt="Novedad 1">
+            <div class="novedad-content">
+                <h3>Título de la Novedad 1</h3>
+                <p>Breve descripción o resumen de esta novedad. <a href="#">Leer más...</a></p>
+            </div>
+        </div>
+        <!-- Segunda novedad -->
+        <div class="novedad">
+            <img src="https://via.placeholder.com/300x200" alt="Novedad 2">
+            <div class="novedad-content">
+                <h3>Título de la Novedad 2</h3>
+                <p>Breve descripción o resumen de esta novedad. <a href="#">Leer más...</a></p>
+            </div>
+        </div>
+        <!-- Tercera novedad -->
+        <div class="novedad">
+            <img src="https://via.placeholder.com/300x200" alt="Novedad 3">
+            <div class="novedad-content">
+                <h3>Título de la Novedad 3</h3>
+                <p>Breve descripción o resumen de esta novedad. <a href="#">Leer ...</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
