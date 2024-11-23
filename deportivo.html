@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos Partidos de Fútbol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .match-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .match-card:hover {
+            transform: scale(1.05);
+        }
+        .match-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .match-card h2 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .match-card .teams {
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+            margin: 10px 0;
+        }
+        .match-card .time, .match-card .location {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html.html">Inicio</a>
+    <div class="container">
+        <h1>Próximos Partidos de Fútbol</h1>
+        <div class="match-list">
+            <!-- Partido 1 -->
+            <div class="match-card">
+                <h2>Partido 1</h2>
+                <p class="teams">Equipo A vs Equipo B</p>
+                <p class="time">Hora: 18:00</p>
+                <p class="location">Lugar: Estadio Nacional</p>
+            </div>
+            <!-- Partido 2 -->
+            <div class="match-card">
+                <h2>Partido 2</h2>
+                <p class="teams">Equipo C vs Equipo D</p>
+                <p class="time">Hora: 20:30</p>
+                <p class="location">Lugar: Estadio Olímpico</p>
+            </div>
+            <!-- Partido 3 -->
+            <div class="match-card">
+                <h2>Partido 3</h2>
+                <p class="teams">Equipo E vs Equipo F</p>
+                <p class="time">Hora: 22:00</p>
+                <p class="location">Lugar: Estadio Municipal</p>
+            </div>
+            <!-- Añade más partidos aquí -->
+        </div>
+    </div>
+</body>
+</html>
