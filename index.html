@@ -89,7 +89,28 @@
                 padding: 10px;
             }
         }
+
+        .clock {
+            font-size: 24px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
     </style>
+    <script>
+        function updateClock() {
+            const options = { 
+                timeZone: 'America/Argentina/Buenos_Aires', 
+                hour12: true,
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            };
+            const date = new Date().toLocaleString('es-AR', options);
+            document.getElementById('clock').textContent = date;
+        }
+        setInterval(updateClock, 1000); // Actualiza cada segundo
+    </script>
 </head>
 <body>
 
@@ -124,7 +145,11 @@
         <p>Cuidarte en las redes sociales y evitar caer en estafas, especialmente si usas información sensible como datos de tarjetas, es esencial. Aquí tienes algunas recomendaciones prácticas y fáciles de seguir:
 </p>
           <a href="seccion3.html">Leer más...</a>
-  
+    </div>
+</div>
+
+<!-- Reloj de Buenos Aires -->
+<div class="clock" id="clock"></div>
 
 <footer>
     <p>&copy; 2024 Portal de Noticias. Todos los derechos reservados.</p>
