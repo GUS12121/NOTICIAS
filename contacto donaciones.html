@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donación de Mercadería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .donate-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .donate-button:hover {
+            background-color: #45a049;
+        }
+        .thank-you-message {
+            display: none;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="message">
+        ¡Ayúdanos a hacer la diferencia! 👐
+        <p>Tu donación de mercadería puede cambiar la vida de muchas personas que más lo necesitan. ¡Cada gesto cuenta!</p>
+        <p>Haz clic en el botón de abajo para realizar tu donación.</p>
+    </div>
+
+    <button class="donate-button" onclick="showThankYouMessage()">¡Quiero donar!</button>
+
+    <div class="thank-you-message" id="thankYouMessage">
+        ¡Gracias por tu generosidad! 🙏
+        <p>Tu apoyo es invaluable para aquellos que más lo necesitan.</p>
+        <p><a href="formulario.html"id="donationLink" target="_blank">Haz tu donación aquí</a></p>
+    </div>
+</div>
+
+<script>
+    // Función para mostrar mensaje de agradecimiento
+    function showThankYouMessage() {
+        // Mostrar el mensaje de agradecimiento
+        document.getElementById("thankYouMessage").style.display = "block";
+        // Aquí puedes reemplazar el '#' con el link real de la página de donaciones
+        document.getElementById("donationLink").href = 'formulario.html'; 
+    }
+</script>
+
+</body>
+</html>
