@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+    <title>Formulario de Ayuda</title>
+<style>
+    /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,99 +21,98 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
 }
 
-h2 {
+h1 {
     text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-.input-container {
-    margin-bottom: 15px;
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     font-weight: bold;
-    display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
-input, textarea {
-    width: 100%;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: vertical;
-    height: 100px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
 }
 
 button {
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
+    font-size: 1rem;
     border: none;
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-    </style>
+</style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Formulario de Contacto</h2>
-        <form action="https://formsubmit.co/gustavodavalo922@gmail.com" method="POST">
-            <div class="input-container">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="input-container">
-                <label for="name">Apellido:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="input-container">
-                <label for="name">Numero de hijos/as:</label>
-                <input type="numero" id="name" name="name" required>
-            </div>
-            <div class="input-container">
-                <label for="name">Documento:</label>
-                <input type="numero" id="name" name="name" required>
-            </div>
-            <div class="input-container">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-container">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-            <input type="hidden" name="_next" value="https//localhost:3800">
-            <input type="hidden" name="_captcha" value="false">
+        <form action="https://formsubmit.co/635b9092f12063aefca98ad7c517b092" method="POST">
+        <h1>Formulario de Ayuda</h1>
+        <p>Por favor, completa los siguientes datos para que podamos contactarte y coordinar tu ayuda.</p>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-           
-            
-       
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+
+            <label for="barrio">Barrio:</label>
+            <input type="text" id="barrio" name="barrio" required>
+
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required>
+
+            <label for="casa_departamento">Casa o Departamento:</label>
+            <input type="text" id="casa_departamento" name="casa_departamento" required>
+
+            <label for="local_comercio">Local/Comercio (Opcional):</label>
+            <input type="text" id="local_comercio" name="local_comercio">
+
+            <button type="submit">Enviar</button>
         </form>
     </div>
 </body>
 </html>
-
-<!--<input type="hidden" name="_next" value="https//localhost:3000">-->
-<!--<input type="hidden" name="_captcha" value="false">-->
-<!--<input type="hidden" name="_template" value="table">-->
-
-<!--
-    _atoresponse
--->
